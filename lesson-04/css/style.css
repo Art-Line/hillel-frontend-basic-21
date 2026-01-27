@@ -1,0 +1,28 @@
+h1 {
+    font-size: 200px;
+}
+
+p {
+    font-size: 30px;
+}
+
+.about {
+    font-size: 40px;
+}
+
+#customer {
+    font-size: 9px;
+}
+
+
+.exmp {
+    font-family: Tahoma, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 40px;
+    /* color: red; */
+    /* color: #1ab9e5; */
+    /* color: rgb(22, 123, 255); */
+    /* color: rgba(206, 36, 36,0.3); */
+}
