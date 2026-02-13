@@ -1,0 +1,346 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+
+.box-red-relative {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    padding: 10px;
+
+    position: relative;
+    left: 20px;
+    top: 50px;
+}
+
+
+.box-red-absolute {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+.box-green {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+
+
+
+.cart {
+    margin: 50px;
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    position: relative;
+}
+
+.cart span {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+
+.box {
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    position: relative;
+
+}
+
+.article {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    
+}
+
+.label {
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.pos-fixed {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.close {
+   width: 20px;
+   height: 20px;
+   position: absolute;
+   background-color: black;
+   left: -10px;
+   top: -10px;
+
+}
+
+.div {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.div {
+    position: static;
+}
+
+
+
+.parent {
+    background-color: yellow;
+}
+
+.st {
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    position: sticky;
+    left: 0;
+    top: 0;
+}
+
+
+
+
+
+
+
+.box-1 {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.box-2 {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    position: absolute;
+    left: 80px;
+    top: 80px;
+    z-index: 2;
+}
+
+.box-3 {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    position: absolute;
+    left: 160px;
+    top: 160px;
+}
+
+
+
+.header {
+    box-shadow: 0 10px 10px rgba(0,0,0,0.6);
+    position: relative;
+    z-index: 1;
+}
+
+
+
+.main {
+    background-color: yellow;
+}
+
+
+
+.popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+
+.popup-inset {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 50px auto 0;
+    position: relative;
+}
+
+
+.close-popup {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+}
+
+
+
+
+
+
+.rew {
+    width: 300px;
+    padding: 20px;
+    background-color: yellow;
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+
+.rew::after {
+    content: '';
+    border-left: 10px solid red;
+    border-top: 10px solid red;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    display: block;
+    position: absolute;
+    left: 50px;
+    bottom: -20px;
+}
+
+
+
+.menu {
+    list-style: none;
+    padding-left: 0;
+     display: flex;
+}
+
+.menu > li {
+    position: relative;
+}
+
+.menu > li::after {
+    content: "";
+    background-image: url('../img/arrow.svg');
+    width: 13px;
+    height: 7px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu > li:hover::after {
+    transform: rotate(180deg) translateY(50%);
+}
+
+
+.menu > li:hover ul {
+    display: block;
+}
+
+.menu > li > a {
+    background-color: lightcoral;
+    padding: 5px 30px 5px 10px;
+    display: block;
+}
+
+.menu > li:hover > a {
+    background-color: lightgreen;
+}
+
+.menu ul {
+    list-style: none;
+    padding-left: 0;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    display: none; 
+}
+
+.menu ul::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -12px;
+    width: 100%;
+    height: 12px;
+    background-color: transparent;
+}
+
+.menu ul li {
+    border-bottom: 1px solid black;
+}
+.menu ul a {
+    background-color: lightsalmon;
+    padding: 5px;
+    display: block;
+}
+
+
+.menu ul a:hover {
+    background-color: lightpink;
+}
+
+
+
+
+/* 
+ * {}
+
+ p {}
+
+ .name {}
+
+ #id {}
+
+ .menu span {
+
+ } */
+
+
+ /* .list li {
+    border-bottom: 2px solid black;
+ } */
+
+  /* .list > li {
+    border-bottom: 2px solid black;
+ }
+
+
+ .list > li > a {
+    color: red;
+ } */
