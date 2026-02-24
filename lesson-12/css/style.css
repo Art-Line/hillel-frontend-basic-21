@@ -1,0 +1,314 @@
+* {
+    box-sizing: border-box;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+
+.rotate {
+    width: 200px;
+    height: 200px;
+    margin: 100px;
+
+    background-color: red;
+
+    transform: rotate(45deg);
+
+    transform-origin: 50% 50%;
+} 
+
+
+
+.translater {
+    width: 200px;
+    height: 200px;
+    margin: 100px;
+
+    background-color: red;
+
+    transform: translateX(200px);
+    transform: translateY(100px);
+
+} 
+
+
+
+
+.scale {
+    width: 200px;
+    height: 200px;
+    margin: 100px;
+
+    background-color: red;
+
+    
+}
+
+.scale:hover {
+    transform: scale(1.2);
+} 
+
+
+
+
+.skew {
+    width: 200px;
+    height: 200px;
+    margin: 100px;
+
+    background-color: red;
+
+    transform: skew(15deg, 30deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* .transition {
+    font-size: 40px;
+    color: #fff;
+    width: 300px;
+    height: 100px;
+    background-color: red;
+
+    transition-duration: 2s;
+    transition-property: width, background-color;
+
+    transition-delay: 3s;
+    transition-timing-function: linear;
+    
+}
+
+.transition:hover {
+    color: black;
+    width: 500px;
+    background-color: green;
+} */
+
+
+.btn {
+    cursor: pointer;
+    /* font-size: 18px; */
+    font-family: inherit;
+    color: black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: rgba(70, 163, 88, 1);
+    text-decoration: none;
+    border: none;
+
+    transition-duration: 300ms;
+    transition-property: background-color;
+}
+
+.btn:hover {
+    background-color: rgba(70, 163, 88, 0.7);
+    opacity: 0.7;
+
+    /* font-size: 40px; */
+}
+
+
+
+
+.input {
+    border: 1px solid green;
+    border-radius: 6px;
+    padding: 5px 10px;
+}
+
+.input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+
+.checkbox-text {
+    display: inline-flex;
+    align-items: center;
+}
+
+.checkbox-text::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    border: 1px solid #3D3D3D;
+    border-radius: 4px;
+    background-color: #fff;
+    margin-right: 11px;
+}
+
+.checkbox-input:checked + .checkbox-text::before{
+    background-image: url('../img/checkbox.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+
+
+.ui-slider {
+    position: relative;
+    height: 4px;
+    background: rgba(70, 163, 88, 0.20);
+    border-radius: 2px;
+}
+
+.ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    background: #46A358;
+    height: 4px;
+}
+
+.ui-slider-handle {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    background-color: #46A358;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    transform: translateY(-50%);
+    margin-top: 2px;
+    z-index: 2;
+}
+
+
+
+
+.select {
+    background-image: url('../img/select.svg');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+
+    border: 1px solid green;
+    padding: 10px 40px 10px 10px;
+
+    border-radius: 6px;
+
+    appearance: none;
+}
+
+
+
+
+.scale-box {
+    width: 300px;
+    height: 200px;
+    background-color: red;
+    transition-duration: 500ms;
+    transition-property: transform;
+}
+
+
+.scale-box:hover {
+    transform: scale(1.15);
+}
+
+
+
+
+
+.sun {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation-name: shine;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* animation-direction: reverse; */
+    animation-direction: alternate;
+
+
+}
+
+
+
+
+
+@keyframes shine {
+    /* from {
+        background-color: orange;
+        left: 0;
+    } */
+    /* to {
+        background-color: red;
+        left: 90%;
+    } */
+
+    30% {
+        background-color: orangered;
+    }
+    50% {
+        left: 50%;
+        bottom: 300px;
+    }
+    100% {
+        left: 80%;
+        bottom: 0;
+    }
+}
+
+
+
+
+.sun2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    animation-name: sun2;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-iteration-count: 3;
+
+    animation-direction: alternate;
+
+    /* animation-fill-mode: forwards; */
+    /* animation-fill-mode: backwards; */
+    animation-fill-mode: both;
+    animation-play-state: paused;
+}
+
+.check:checked + .sun2 {
+    animation-play-state:running;
+}
+
+@keyframes sun2 {
+    0% {
+        background-color: green;
+    }
+    100% {
+        left: 50%;
+        background-color: red;
+    }
+}

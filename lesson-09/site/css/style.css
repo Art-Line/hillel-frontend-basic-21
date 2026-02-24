@@ -109,6 +109,12 @@
     letter-spacing: 1.4px;
     text-transform: uppercase;
     text-decoration: none;
+    transition-duration: 0.3s;
+    transition-property: color;
+}
+
+.top-menu a:hover {
+    color: blue;
 }
 
 .header-right {
@@ -179,6 +185,9 @@
     position: relative;
     display: flex;
     flex-direction: column;
+
+    transition-duration: 300ms;
+    transition-property: box-shadow;
 }
 
 .good:hover {
@@ -245,6 +254,9 @@
     border: 2px solid #FFCD4E;
     background: #FFF;
     padding: 10px 20px;
+
+    transition-duration: 300ms;
+    transition-property:  background-color, box-shadow;
 }
 
 .good-btn:hover {
@@ -271,7 +283,10 @@
     bottom: 7px;
     width: 135px;
     justify-content: space-between;
-    display: none;
+    display: flex;
+    opacity: 0;
+    transition-duration: 500ms;
+    transition-property: opacity;
 }
 
 .good-icons a {
@@ -282,6 +297,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition-duration: 300ms;
+    transition-property: fill;
 }
 
 .good-icons a:hover path {
@@ -289,5 +306,5 @@
 }
 
 .good:hover .good-icons {
-    display: flex;
+   opacity: 1;
 }

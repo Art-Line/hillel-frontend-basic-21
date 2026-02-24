@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 14px;
+}
+
+
+.body {
+/* 
+    font-size: 20px; */
+    /* background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-color: red; */
+
+    /* background-attachment: fixed; */
+    /* background-repeat: repeat-y; */
+
+
+
+    /* background: red url('../img/bg.jpg') fixed right top no-repeat; */
+}
+
+.box {
+    /* width: 200px;
+    height: 200px; */
+
+    /* background-color: rgba(255, 30, 45, 0.9); */
+}
+
+/* .box2 {
+    width: 100%;
+    height: 500px;
+    background: url('../img/bg.jpg') no-repeat left top,
+                url('../img/bg2.jpg') no-repeat right top;
+} */
+
+
+.box3 {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    /* background:  url('../img/bg.jpg') no-repeat left top,
+                    url('../img/bg2.jpg') no-repeat right top;
+    
+    
+    background-size: 50px auto, 100px auto; */
+
+    /* background: url('../img/bg.jpg') no-repeat left top; */
+}
+
+
+.gradient {
+    width: 400px;
+    height: 400px;
+
+    /* background: linear-gradient(red 40%, green 60%); */
+
+    /* background: radial-gradient(red, green); */
+
+   
+}
+
+
+
+
+.radius {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    border-radius: 0 50px 0 0 / 0 100px 0 0;
+}
+
+
+
+.insta {
+    width: 48px;
+    height: 48px;
+    border: 1px solid #cad4ec;
+    background-image: url('../img/instagramm.svg');
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 50%;
+    background-position: center;
+}
+
+.insta:hover {
+    background-color: plum;
+}
+
+.insta2 {
+    width: 48px;
+    height: 48px;
+    border: 1px solid #cad4ec;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.insta2:hover path {
+    fill: red;
+}
+
+
+/* 
+.pro {
+    background-color: yellow;
+    width: 50%;
+    height: 200px;
+} */
+
+
+/* .em {
+    font-size: 2em; 
+} */
+
+
+
+/* .box-em {
+    font-size: 16px;
+    line-height: 1.4em;
+}
+
+
+.box-em {
+    font-size: 14px;
+} */
+
+
+
+/* 
+
+.box-rem {
+    font-size: 2rem;
+    padding-right: 1rem;
+    margin-bottom: 2rem;
+} */
+
+
+
+
+/* .home {
+    background-image: url('../img/bg-screen.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.home::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.home h1 {
+    font-size: 50px;
+    color: #fff;
+}
+
+.home__inset {
+    position: relative;
+    z-index: 1;
+} */
+
+
+
+
+.link {
+    font-size: 200px;
+    color: red;
+}
+
+.link:hover {
+    color: black;
+}
+
+/* .link:active {
+    color: green;
+} */
+
+.link:focus {
+    color: green;
+    outline: none;
+}
+
+
+
+.list li {
+    font-size: 40px;
+    color: red;
+}
+
+/* .list li:first-child {
+    color: gray;
+}
+
+.list li:last-child {
+    color: green;
+} */
+
+
+/* .list li:nth-child(5n + 1) {
+    color: green;
+} */
+
+/* 
+.list li:nth-last-child(2) {
+    color: green;
+} */
+
+
+/* 
+.box100 .elem:first-child {
+    color: red;
+}
+ */
+
+
+
+
+/* 
+ .box100 .elem:first-of-type {
+    color: red;
+ }
+
+
+ .box100 .elem:last-of-type {
+    color: red;
+ }
+
+
+ .box100 .elem:nth-of-type(2) {
+    color: green;
+ }   */
+
+
+
+.video {
+    width: 50%;
+    height: 300px;
+}
+
+
+
+
+
+
+
+
