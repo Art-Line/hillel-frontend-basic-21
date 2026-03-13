@@ -1,0 +1,13 @@
+@use 'variables';
+
+.btn {
+    display: flex;
+    padding: 20px;
+    color: variables.$green;
+    &_red {
+        background-color: red;
+    }
+    &:hover {
+        opacity: 0.4;
+    }
+}

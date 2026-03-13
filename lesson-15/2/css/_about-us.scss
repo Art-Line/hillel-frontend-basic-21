@@ -1,0 +1,6 @@
+.about-us {
+    padding: 2px;
+    &:nth-child(odd) {
+        padding: 40px;
+    }
+}

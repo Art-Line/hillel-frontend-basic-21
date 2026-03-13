@@ -1,0 +1,36 @@
+@import url('head.css');
+
+.btn {
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 6px;  
+}
+
+.btn_red {
+    background-color: red;
+}
+.btn_green {
+    background-color: green;
+}
+
+.btn_lg {
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.btn_sm {
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+
+
+
+/* 
+less (.less)
+sass (.sass .scss)
+styl (.styl) */

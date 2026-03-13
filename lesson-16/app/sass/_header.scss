@@ -87,6 +87,32 @@
     .fb {
         display: block;
     }
+
+    .fb {
+        background-image: url('../img/fb.svg');
+        width: 24px;
+        height: 24px;
+        text-decoration: none;
+    }
+
+    .address {
+        display: inline-flex;
+        align-items: center;
+        &::after,
+        &::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: red;
+        }
+        &::after {
+            margin-left: 6px;
+        }
+        &::before {
+            margin-right: 6px;
+        }
+    }
 }
 
 @media screen and  (min-width:992px) {
